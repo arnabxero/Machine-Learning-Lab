@@ -1,0 +1,22 @@
+import pandas as pd
+
+data = pd.read_csv('salary.csv')
+data.head()
+
+x = data[['YearsExperience']]
+y = data['Salary']
+
+shuffle_df = data.sample(frac=1)
+
+set_size_in_percent = 70
+
+train_size = int((set_size_in_percent/100) * len(data))
+
+train_set = shuffle_df[:train_size]
+test_set = shuffle_df[train_size:]
+
+xtrain = train_set[['YearsExperience']]
+xtest = test_set[['YearsExperience']]
+
+ytrain = train_set['Salary']
+ytest = test_set['Salary']

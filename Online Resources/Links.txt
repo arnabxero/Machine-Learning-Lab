@@ -1,0 +1,4 @@
+Linear Reggression - 
+https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/
+https://medium.com/geekculture/linear-regression-from-scratch-in-python-without-scikit-learn-a06efe5dedb6
+
